@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context=".screens.SignUpActivity"
+    android:background="@color/bg_color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0pt"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="@string/txt_faca_cadastro"
+        android:textSize="15pt"
+        android:textAppearance="@style/txt_welcome"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="125dp"
+        app:srcCompat="@drawable/chooseprofilephoto"
+        android:layout_marginTop="20pt"
+        android:contentDescription="@string/logo_desc"
+        android:onClick="SelectPhoto"/>
+
+    <!-- Nome -->
+    <TextView
+        android:layout_width="229dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="50dp"
+        android:text="Nome"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/signup_vars"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_weight="0"
+        android:inputType="text"
+        android:text="@string/signup_name"
+        android:background="@drawable/back"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="27pt"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:hint="Digite seu nome" />
+    <TextView
+        android:layout_width="229dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="20dp"
+        android:text="Data de Nascimento"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/signup_vars"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_weight="0"
+        android:inputType="date"
+        android:text="@string/signup_birthdate"
+        android:background="@drawable/back"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="27pt"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:hint="DD/MM/AAAA" />
+
+    <!-- E-Mail -->
+    <TextView
+        android:layout_width="229dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="20dp"
+        android:text="E-Mail"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/signup_vars"
+        />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_weight="0"
+        android:inputType="textEmailAddress"
+        android:text="@string/signup_email"
+        android:background="@drawable/back"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="27pt"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:hint="ex.: joao@hotmail.com" />
+
+    <!-- Senha -->
+    <TextView
+        android:layout_width="229dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="20dp"
+        android:text="Senha"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/signup_vars"
+        />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textPassword"
+        android:text="@string/signup_password"
+        android:background="@drawable/back"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="27pt"
+        android:layout_marginTop="0pt"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:hint="Digite uma senha" />
+
+
+    <!-- TODO como fazer link clicáveis
+            android:linksClickable="true"
+            android:autoLink="all"-->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27pt"
+        android:text="Aceito os Termos de Contrato"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="0pt"
+            android:layout_marginStart="50pt"
+            android:layout_marginEnd="50pt"
+            android:gravity="center"
+            android:text="@string/btn_signup"
+            android:onClick="buttonSignUpClick"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textStyle="bold"
+            android:textColor="@color/button_text_color"
+            android:backgroundTint="@color/button_background_color"/>/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="txt_welcome">
+        <item name="android:textSize">37sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="signup_vars">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

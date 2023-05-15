@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ProjetoPDM</string>
+    <string name="signup_name">teste</string>
+    <string name="signup_email">teste@gmail.teste</string>
+    <string name="signup_password">teste1234</string>
+    <string name="signup_birthdate">15/05/2023</string>
+    <string name="btn_signup">Cadastrar</string>
+    <string name="btn_signin">Entrar</string>
+    <string name="btn_signout">Sair</string>
+    <string name="txt_welcome">SEJA BEM-VINDO</string>
+    <string name="txt_welcome_login">BEM VIND@,\nEX-USUÁRI@!</string>
+    <string name="txt_faca_login">Entre com sua conta</string>
+    <string name="txt_faca_cadastro">Realize seu Cadastro</string>
+    <string name="logo_desc">Logo do aplicativo</string>
+    <string name="signup_desc">Imagem para selecionar a foto de perfil</string>
+    <color name="bg_color">#1BA9C9</color>
+</resources>
